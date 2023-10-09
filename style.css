@@ -23,6 +23,8 @@ h1 {
     animation-name: slider;
     animation-duration: 18s;
     animation-iteration-count: infinite;
+    opacity: 1;
+    transition: opacity ease 250ms;
 }
 
 #gallery img {
@@ -30,7 +32,12 @@ h1 {
     float: left;
 }
 
-@keyframes slider {
+/* #gallery img:hover {
+    opacity: 0.75;
+} */
+
+
+/* @keyframes slider {
     0%
     {
         left: 0px;
@@ -56,4 +63,4 @@ h1 {
     100% {
         left: 0px;
     }
-}
+} */
