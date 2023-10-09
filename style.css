@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    color: brown;
+}
+
+.container {
+    width: 100%;
+}
+
+.slideshow {
+    width: 500px;
+    margin: auto;
+}
+
+#wrapper {
+    width: 500px;
+    overflow: hidden;
+}
+
+#gallery {
+    position: relative;
+    width: 3000px;
+    animation-name: slider;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+
+#gallery img {
+    width: 500px;
+    float: left;
+}
+
+@keyframes slider {
+    0%
+    {
+        left: 0px;
+    }
+    27% 
+    {
+        left: -500px;
+    }
+    42%
+    {
+        left: -1000px;
+    }
+    52% 
+    {
+        left: -1000px;
+    }
+    66% {
+        left: -1500px;
+    }
+    88% {
+        left: -2000px;
+    }
+    100% {
+        left: 0px;
+    }
+}
