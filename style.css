@@ -23,8 +23,6 @@ h1 {
     animation-name: slider;
     animation-duration: 18s;
     animation-iteration-count: infinite;
-    opacity: 1;
-    transition: opacity ease 250ms;
 }
 
 #gallery img {
@@ -32,12 +30,8 @@ h1 {
     float: left;
 }
 
-/* #gallery img:hover {
-    opacity: 0.75;
-} */
 
-
-/* @keyframes slider {
+@keyframes slider {
     0%
     {
         left: 0px;
@@ -63,4 +57,19 @@ h1 {
     100% {
         left: 0px;
     }
-} */
+}
+
+
+
+.heading {
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
